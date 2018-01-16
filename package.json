@@ -1,0 +1,54 @@
+{
+  
+  "bundleDependencies": false,
+  "dependencies": {
+    "nan": "~2.8.0"
+  },
+  "deprecated": false,
+  "description": "Oracle Database driver by Oracle Corp.",
+  "devDependencies": {
+    "async": "^1.5.0",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "gypfile": true,
+  "homepage": "https://github.com/Svinokol/oracledb-node-win32-x32",
+  "keywords": [
+    "Oracle",
+    "Database",
+    "official",
+    "DB",
+    "SQL",
+    "JSON",
+    "PL/SQL",
+    "OCI",
+    "API",
+    "client",
+    "library",
+    "driver",
+    "add-on",
+    "extension",
+    "binding",
+    "interface",
+    "adapter",
+    "module"
+  ],
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "Efim Matytsin"
+    }
+  ],
+  "name": "oracledb-win32-x32",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "posttest": "node test/opts/versions.js",
+    "test": "mocha --opts test/opts/mocha.opts",
+    "testwindows": "mocha --opts test\\opts\\mocha.opts && npm run posttest"
+  },
+  "version": "1.0"
+}
