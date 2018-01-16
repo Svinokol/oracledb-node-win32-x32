@@ -36,7 +36,8 @@
     "adapter",
     "module"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
+  "author": "Efim Matytsin",
   "main": "./index.js",
   "maintainers": [
     {
@@ -50,5 +51,5 @@
     "test": "mocha --opts test/opts/mocha.opts",
     "testwindows": "mocha --opts test\\opts\\mocha.opts && npm run posttest"
   },
-  "version": "1.0"
+  "version": "v0.1.0"
 }
